@@ -23,7 +23,7 @@ public class BulletManager : MonoBehaviour
 
         for (int count = 0; count < MaxBullets; count++)
         {
-            var tempBullet = bulletFactory.createBullet(BulletType.NORMAL);
+            var tempBullet = bulletFactory.createBullet(BulletType.RANDOM);
             m_bulletPool.Enqueue(tempBullet);
         }
     }

@@ -7,5 +7,6 @@ public enum BulletType
 {   
     NORMAL,
     FAT,
-    PULSATING
+    PULSATING,
+    RANDOM
 }

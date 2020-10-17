@@ -10,8 +10,14 @@ public class BulletFactory : MonoBehaviour
     public GameObject fatBullet;
     public GameObject pulsatingBullet;
 
-    public GameObject createBullet(BulletType type)
+    public GameObject createBullet(BulletType type = BulletType.RANDOM)
     {
+        if (type == BulletType.RANDOM)
+        {
+            var randomBullet = Random.Range(0, 3);
+            type = (BulletType)randomBullet;
+        }
+
         GameObject tempBullet = null;
 
         switch (type)
